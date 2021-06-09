@@ -1,12 +1,12 @@
 #include <SoftwareSerial.h>
-String readStrings="0,0,0,0,0";
+String readStrings="Loading,0,0,0,0";
 int f=0;
-#define rxPin A1
-#define txPin A0
+#define rxPin 4
+#define txPin 7
 SoftwareSerial mySerial(rxPin, txPin); // RX, TX
 char myChar; 
 void setup() {
-  Serial.begin(57600);   
+  Serial.begin(9600);   
   mySerial.begin(9600);
 
 }
